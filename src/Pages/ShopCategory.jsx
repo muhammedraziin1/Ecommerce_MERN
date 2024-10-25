@@ -13,6 +13,7 @@ const ShopCategory = (props) => {
            <div className="shopcategory-sort">
             Sort by <img src={drop_icon} alt='dropdown'/>
            </div>
+           </div>
            <div className="shopcategory-products">
             {all_products.map((item, i) => {
               if(props.category === item.category) {
@@ -23,7 +24,9 @@ const ShopCategory = (props) => {
               }
             } )}
            </div>
-        </div>
+           <div className="shopcategory-loadmore">
+            Explore More
+           </div>
     </div>
   )
 }
